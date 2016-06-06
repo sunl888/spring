@@ -1,0 +1,102 @@
+*{
+	font-family:Microsoft YaHei;
+}
+body{
+	padding-top: 70px;
+}
+a:focus{
+	background:none!important;
+	color:#fff!important;
+}
+/*导航栏*/
+/*Logo*/
+.navbar-brand{
+	color: #fff;
+    font-weight: 900;
+    font-size: 30px!important;
+	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
+}
+.navbar-brand:hover{
+	color: #fff;
+	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.4);
+	transition:text-shadow 0.2s;
+	-moz-transition:text-shadow 0.2s;
+	-webkit-transition:text-shadow 0.2s;
+	-o-transition:text-shadow 0.2s;
+}
+/*右侧导航栏*/
+.nav a{
+	font-size:18px;
+	color:#fff;
+	transition:background-color 0.2s;
+	-moz-transition:background-color 0.2s;
+	-webkit-transition:background-color 0.2s;
+	-o-transition:background-color 0.2s;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #00B200!important;
+    /*border-radius: 10%;*/
+	color:#fff;
+	font-weight:500;
+	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
+	/*border-top: 2px solid #fff;*/
+}
+.dropmenu{
+	min-width: 100%!important;
+	background-color: rgba(255, 255, 255, 0)!important;
+	border: 1px solid #00B200!important;
+}
+.dropmenu>li>a{
+	color:#fff!important;
+}
+.dropmenu>li>a:hover{
+	background-color:#00B200!important;
+	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
+}
+.dropdown-toggle:focus{
+	background-color: #00B200!important;
+}
+.divider{
+	background-color: rgba(45, 154, 0, 0.24)!important;
+}
+/*内容开始*/
+.col-md-12>h1 {
+    color: #fff;
+    display: block;
+    margin: 138px 0 40px 0;
+    font-weight: 900 !important;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
+}
+.col-md-12>p{
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
+}
+.btn-custom{
+	border:1px #058E05 solid;
+	border-radius:6px;
+	background:none;
+	color:#fff;
+	width:160px;
+	height:50px;
+	display: block!important;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
+}
+.btn-custom:hover{
+	border:1px #058E05 solid;
+	background-color:#00B200;
+	color:#fff;
+	transition:background-color 0.4s;
+	-moz-transition:background-color 0.4s;
+	-webkit-transition:background-color 0.4s;
+	-o-transition:background-color 0.4s;
+}
+
+
