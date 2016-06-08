@@ -7,50 +7,76 @@
         <link rel="stylesheet" href="style/index.css">
 		
 		<!--bootstrap框架-->
+		<link href="style/landing-page.css" rel="stylesheet" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </head>
-    <body background="images/4.jpg">
+    <body>
 		<!--导航栏-->
         <nav class="navbar navbar-fixed-top bs-docs-nav">
 		  <div class="container">
 			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
-			  </button>
+	          </button>
 			  <a class="navbar-brand" href="#">Spring</a>
 			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			  <ul class="nav navbar-nav navbar-right">
 				<li><a href="#">桐城简介</a></li>
 				<li><a href="#">名胜古迹</a></li>
 				<li><a href="#">人文地理</a></li>
 				<li><a href="#">图片视频</a></li>
 				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >个人中心<span class="caret"></span></a>
-				  <ul class="dropdown-menu dropmenu">
-					<li><a href="#">我的</a></li>
-					<li><a href="#">登陆</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="#">退出</a></li>
-				  </ul>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >个人中心<span class="caret"></span></a>
+					<ul class="dropdown-menu dropmenu">
+						<li><a href="#">我的主页</a></li>
+						<li><a href="#">登陆</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">退出</a></li>
+					</ul>
 				</li>
 			  </ul>
+			 </div>
 		  </div>
 		</nav>
+		
 		<!--正文-->
+		<!--首页大图-->
+		<div class="intro-header">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    <div class="intro-message">
+	                        <h1>大美桐城欢迎您!</h1>
+							<div class="intro-message-h4">
+								<h4>我在四月的龙眠河畔等你</h4>
+								<h4>杨柳岸，四月的细雨写满眷恋，龙眠大地处处都是诗情画意。</h4>
+							</div>
+							<button type="button" class=" btn-custom">Next</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		
+		<!--<img class="img-responsive img-bg" src="images/4.jpg" />
 		<div class="container">
 			<div class="row">
-			  <div class="col-md-12">
+			  <div class="col-lg-12">
 				<h1>大美桐城欢迎您!</h1>
 				<p>我在四月的龙眠河畔等你</p>
+				<p>杨柳岸，四月的细雨写满眷恋，龙眠大地处处都是诗情画意。</p>
 			  </div>
-			  <button type="button" class=" btn-custom">Next</button>
 			</div>
-			
-		</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<button type="button" class=" btn-custom">Next</button>
+				</div>
+			</div>
+		</div>-->
     </body>
 </html>
