@@ -1,15 +1,27 @@
 *{
 	font-family:Microsoft YaHei;
+
 }
 body{
 	padding-top: 70px;
 }
+/*伪元素   匹配突出显示的文本*/
+::selection {
+	background:#00B200;
+	color:#fff;
+}
+
 a:focus{
 	background:none!important;
 	color:#fff!important;
 }
-/*导航栏*/
-/*Logo*/
+/*图片类*/
+.pic{/*position: absolute;*//*height: 340px;width: 300px;*/overflow: hidden;}
+.pic>img{width:100%;display: block;height: 100%;transition: transform .4s;}
+.pic>img:hover{transform: scale(1.5);}
+.pic>p{background:#000;opacity: .5;position: relative;bottom:20px;margin: 0;color: #fff;}
+
+/*导航栏Logo*/
 .navbar-brand{
 	color: #fff;
     font-weight: 900;
@@ -24,15 +36,15 @@ a:focus{
 	-webkit-transition:text-shadow 0.2s;
 	-o-transition:text-shadow 0.2s;
 }
-/*右侧导航栏*/
+/*导航栏右侧导航菜单*/
 .nav >li>a{
 	font-size:18px;
 	color:#fff;
 	font-weight:500;
-	transition:background-color 0.2s;
-	-moz-transition:background-color 0.2s;
-	-webkit-transition:background-color 0.2s;
-	-o-transition:background-color 0.2s;
+	transition:all 0.2s;
+	-moz-transition:all 0.2s;
+	-webkit-transition:all 0.2s;
+	-o-transition:all 0.2s;
 }
 .nav>li>a:hover {
     text-decoration: none;
@@ -42,6 +54,7 @@ a:focus{
 	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
 	/*border-top: 2px solid #fff;*/
 }
+
 .dropmenu{
 	min-width: 100%!important;
 	background-color: rgba(255, 255, 255, 0)!important;
@@ -80,6 +93,7 @@ a:focus{
 }
 .navbar{
     border: 0!important;
+    z-index:999;
 }
 .intro-message-h4{
 	padding-top:30px;
@@ -89,28 +103,6 @@ a:focus{
 }
 /*内容开始*/
 
-/*首页大图*/
-/*.img-bg{
-	position: absolute;
-    top: 0;
-}*/
-/*首页文字*/
-/*
-.col-lg-12>h1 {
-    color: #fff;
-    display: block;
-    margin: 138px 0 40px 0;
-    font-weight: 900 !important;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
-}
-.col-lg-12>p{
-	color:#fff;
-	text-align:center;
-	font-size:18px;
-	text-shadow: 5px 2px 6px rgba(0, 0, 0, 0.26);
-}*/
 /*首页按钮*/
 .btn-custom{
 	border:1px #058E05 solid;
@@ -134,6 +126,95 @@ a:focus{
 	-webkit-transition:background-color 0.4s;
 	-o-transition:background-color 0.4s;
 }
-
-
-
+/*正文标题*/
+.text-h1{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.img-bg1,.img-bg1>.pic{
+	height:300px;
+}
+.col-hr{
+	border-bottom:1px solid #008C00;
+	margin:50px 0;
+}
+.img-mingsheng>.pic{
+	height:248px;
+}
+.span-text{
+	color:#888;
+	text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+.img-mingsheng-zilaiqiao{
+	margin:40px 0 30px 0;
+	text-align:center;
+}
+.img-ms>.pic{
+	height:350px;
+}
+.text-right{
+	margin-top: 20px;
+}
+.img-radius img{
+	border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;	
+}
+/*名人故事h2*/
+.text-mr-center{
+	text-align:center;
+	margin-bottom:70px;
+}
+.mess-text{
+	margin-top: 25px;
+}
+/*图片*/
+.picture {
+    float: left;
+    width: 100%;
+    display: block;
+    padding:0 2.5px;
+    box-sizing: border-box;
+}
+.picture ul{padding: 2.5px}
+.picture ul li{
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+/*触碰鼠标*/
+.cp_pic{position:relative;overflow: hidden;float: left;}
+.cp_pic>img{width: 100%;height: 100%; transition: all 500ms ease-in-out;}
+.cp_pic>a{
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-size: 14px;
+    text-decoration:none;
+    font-family: '微软雅黑';
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 0;
+    background-color: #000;
+    transition: all .2s ease-out;
+}
+.cp_pic>a>p{position:absolute;top:0;left: 0;right: 0;margin:0 auto;}
+.cp_pic>a>p{transition: all .3s ease-out;padding:0 10px;}
+.cp_pic:hover p{top:50%;}
+.cp_pic:hover a{opacity: .6;}
+.cp_pic:hover img{-webkit-transform: scale(1.5);}
+/*媒体查询*/
+@media(min-width:768px) and (max-width: 1000px){
+	/*图片*/
+    .picture ul:last-child{display: none;}
+}
+@media(max-width:768px){
+	/*图片*/
+    .picture ul:nth-child(3),.picture ul:nth-child(4){display: none;}
+}
