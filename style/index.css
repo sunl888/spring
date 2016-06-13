@@ -1,6 +1,5 @@
 *{
 	font-family:Microsoft YaHei;
-
 }
 body{
 	padding-top: 70px;
@@ -10,10 +9,21 @@ body{
 	background:#00B200;
 	color:#fff;
 }
-
-a:focus{
-	background:none!important;
-	color:#fff!important;
+/*返回到顶部*/
+#goTop {
+    background: url(../images/page_top_bg.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    right: 10px;
+    bottom: 20px;
+    position: fixed;/*他固定的对像是可视窗口而并非是body或是父级元素。可通过z-index进行层次分级*/
+    z-index:1;
+	overflow: hidden;
+	cursor:pointer;
+	display:none;/*刚开始不显示*/
+}
+#goTop:hover{
+	background-position:0 -91px;
 }
 /*图片类*/
 .pic{/*position: absolute;*//*height: 340px;width: 300px;*/overflow: hidden;}
@@ -59,6 +69,7 @@ a:focus{
 	min-width: 100%!important;
 	background-color: rgba(255, 255, 255, 0)!important;
 	border: 1px solid #00B200!important;
+	text-align:right;
 }
 .dropmenu>li>a{
 	color:#fff!important;
@@ -91,9 +102,10 @@ a:focus{
     padding-bottom: 0px!important;
     margin-top: -70px!important;
 }
-.navbar{
-    border: 0!important;
+.navbar-fixed-top{
     z-index:999;
+	position: absolute!important;
+	text-align: right;
 }
 .intro-message-h4{
 	padding-top:30px;
@@ -142,7 +154,7 @@ a:focus{
 	height:248px;
 }
 .span-text{
-	color:#888;
+	color:#333;
 	text-align: center;
     display: block;
     margin: 10px 0;
@@ -171,15 +183,22 @@ a:focus{
 .mess-text{
 	margin-top: 25px;
 }
+.footer{
+	margin-top:100px;
+}
+
+
 /*图片*/
 .picture {
     float: left;
     width: 100%;
     display: block;
-    padding:0 2.5px;
+    padding:0 2.5px;      
     box-sizing: border-box;
 }
-.picture ul{padding: 2.5px}
+.picture ul{
+	padding: 2.5px
+}
 .picture ul li{
     overflow: hidden;
     padding-bottom: 5px;
@@ -218,3 +237,15 @@ a:focus{
 	/*图片*/
     .picture ul:nth-child(3),.picture ul:nth-child(4){display: none;}
 }
+
+/*大图预览部分*/
+#big_pic_brow_bg,#big_pic_brow{position:fixed;top:0;left:0;height:100%;width:100%;z-index:900;display:none;_position:absolute;
+_top:expression(eval(document.documentElement.scrollTop));}
+#big_pic_brow_bg{background:#000;opacity:0.7;}
+#big_pic_brow table{height:100%;width:100%;}
+#big_pic_brow tr{text-align:center;}
+#big_pic_brow td{display:table-cell;vertical-align:middle;}
+#big_pic_brow img{vertical-align:middle}
+#big_pic_brow a{display: block;width: 54px;height: 46px;overflow: hidden;font: 24px/32px Tahoma;text-align: center;text-indent: 10px;background:url(../images/close.png) 0 0 no-repeat;color: #CCC;text-decoration:none;position:absolute;right:0;top:0;}
+#big_pic_brow a:hover{text-decoration:none;color: #FFF;background-position:0 -49px;}
+#big_pic_brow_src{max-width:70%;}

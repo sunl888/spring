@@ -28,16 +28,16 @@
 			  <a class="navbar-brand" href="#">Spring</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#section1">桐城简介</a></li>
-				<li><a href="#">名胜古迹</a></li>
-				<li><a href="#">人文地理</a></li>
-				<li><a href="#">图片视频</a></li>
+			  <ul class="nav navbar-nav navbar-right" id="nav">
+				<li><a href="#" data-target="#section1">桐城简介</a></li>
+				<li><a href="#" data-target="#section2">名胜古迹</a></li>
+				<li><a href="#" data-target="#section3">人文地理</a></li>
+				<li><a href="#" data-target="#section4">图片视频</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >个人中心<span class="caret"></span></a>
 					<ul class="dropdown-menu dropmenu">
 						<li><a href="#">我的主页</a></li>
-						<li><a href="#">登陆</a></li>
+						<li><a href="login.html">登陆</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="#">退出</a></li>
 					</ul>
@@ -46,7 +46,9 @@
 			 </div>
 		  </div>
 		</nav>
-		
+			<span id="goTop">
+				<a href="#"></a>
+			</span>
 		<!--正文-->
 		<!--首页大图-->
 		<div class="intro-header">
@@ -90,6 +92,7 @@
 			</div>
 		</div>
 		<!--地理文化-->	
+		<a id="section2"></a>
 		<div class="container">	
 			<!--线条-->
 			<div class="row">
@@ -206,13 +209,14 @@
 			</div>
 		</div>
 		<!--名人故事-->
+		<a id="section3"></a>
 		<div class="container">
 			<!--名人-->
 			<div class="row">
 				<h2 class="text-mr-center">名人故事</h2>
 				<div class="col-lg-4 col-sm-4 col-md-4 img-radius">
 					<img class="img-responsive wow rollIn bg-blue animated" src="images/daimingshi.jpg"/>
-					<div class="mess-text">
+					<div class="mess-text wow bounceInRight bg-yellow animated">
 						<h4>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							戴名世，字田有，一字褐夫，号药身，别号忧庵，晚号栲栳，晚年号称南山先生。死后，讳其姓名而称之为“宋潜虚先生”。又称夏庵先生。江南桐城人。清康熙四十八年己丑科赵熊诏榜进士第二人。
@@ -221,7 +225,7 @@
 				</div>
 				<div class="col-lg-4 col-sm-4 col-md-4 img-radius">
 					<img class="img-responsive wow bounceInDown bg-green animated" src="images/fangbao.jpg"/>
-					<div class="mess-text">
+					<div class="mess-text wow bounceInUp bg-red animated">
 						<h4>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							方苞，字灵皋，亦字凤九，晚年号望溪，亦号南山牧叟。汉族，江南桐城人，生于江宁府。桐城“桂林方氏”十六世祖，是清代散文家，桐城派散文创始人，与姚鼐、刘大櫆合称桐城三祖。
@@ -230,7 +234,7 @@
 				</div>
 				<div class="col-lg-4 col-sm-4 col-md-4 img-radius">
 					<img class="img-responsive wow bounceInRight bg-yellow animated" src="images/zhangtingyu.jpg"/>
-					<div class="mess-text">
+					<div class="mess-text wow rollIn bg-blue animated">
 						<h4>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							张廷玉，字衡臣，号砚斋， 安徽桐城人。大学士张英次子。康熙三十九年进士，改庶吉士，授检讨，入值南书房。清康熙时任刑部左侍郎，雍正帝时曾任礼部尚书、户部尚书、吏部尚书、保和殿大学士、首席军机大臣等职。
@@ -239,154 +243,280 @@
 				</div>
 			</div>
 		</div>
+		
+		
+		<!-- 大图预览开始 -->
+		<div id="big_pic_brow_bg"><!--蒙板--></div>
+		<div id="big_pic_brow">
+			<a href="javascript:;">x</a>
+			<table>
+				<tr>
+					<td><img id="big_pic_brow_src" /></td>
+				</tr>
+			</table>
+		</div>
+		 <!-- 大图预览结束 -->
+		 
 		<!--图片欣赏-->
-		<section class="picture">
-        <h2 class="text-mr-center">Picture</h2>
-        <ul  class="col-md-3 col-sm-4 col-xs-6">
-            <li>
-                <div class="cp_pic">
-                    <img class="big" class="big" src="pic/01.jpg" />
-                    <a href="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/06.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/12.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/08.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <ul  class="col-md-3 col-sm-4 col-xs-6">
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/14.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/13.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/02.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/16.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-
-        </ul>
-        <ul  class="col-md-3 col-sm-4 col-xs-6">
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/09.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/10.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/03.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/04.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <ul  class="col-md-3 col-sm-4 col-xs-6">
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/08.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/15.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/01.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="cp_pic">
-                    <img class="big" src="pic/11.jpg" />
-                    <a herf="javascript:;">
-                        <p>点击查看大图</p>
-                    </a>
-                </div>
-            </li>
-
-        </ul>
-    </section>
+		<a id="section4"></a>
+		<div class="container">
+			<!--线条-->
+			<div class="row">
+				<div class="col-md-12 col-hr">
+				</div>
+			</div>
+			<div class="row"  >
+				<section id="bigTu" class="picture">
+				<h2 class="text-mr-center">图片欣赏</h2>
+				<ul class="col-md-3 col-sm-4 col-xs-6">
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/1.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/2.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/3.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/4.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/16.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/17.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul  class="col-md-3 col-sm-4 col-xs-6">
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/5.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/5.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/6.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/7.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/21.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul  class="col-md-3 col-sm-4 col-xs-6">
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/8.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/9.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/10.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/11.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/18.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/19.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul  class="col-md-3 col-sm-4 col-xs-6">
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/12.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/13.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/14.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/15.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="cp_pic">
+							<img class="big" src="images/pic/23.jpg" />
+							<a href="javascript:;">
+								<p>点击查看大图</p>
+							</a>
+						</div>
+					</li>
+				</ul>
+				</section>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<div class="container-fiuld footer">
+			<footer class="foot">
+				<ul class="list-inline">
+					<li>
+						<a target="_blank" href="https://www.github.com/3tnet">GitHub</a>
+					</li>
+					<li class="footer-menu-divider">&sdot;</li>
+					<li>
+						<a target="_blank" href="http://www.tui-te.com">Twitter</a>
+					</li>
+					<li class="footer-menu-divider">&sdot;</li>
+					<li>
+						<a target="_blank" href="https://www.yahoo.com">Yahoo</a>
+					</li>
+				</ul>
+				<p class="copyright text-muted small">Copyright &copy; 2016-2019 Sunlong. All Rights Reserved. </br></br> 孙龙&nbsp;&copy;&nbsp;皖ICP备16000979号</br></br>QQ:2013855675</p>
+			</footer>
+		</div>
 	<!--js部分-->
 	<script src="js/wow.min.js"></script>
 	<script>
-	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-		new WOW().init();
-	};
+	/*wow.js初始化*/
+		if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+			new WOW().init();
+		};
+		/*背景大图预览*/
+		$(function(){
+			var big_pic_brow_bg = $("#big_pic_brow_bg");
+			var big_pic_brow = $("#big_pic_brow");
+			var big_pic_brow_src = $("#big_pic_brow_src");
+			$('#bigTu>ul>li').click(function(){
+				big_pic_brow_bg.slideDown('fast');
+				big_pic_brow.slideDown('fast');
+				big_pic_brow_src.attr('src',$(this).find('.big').attr('src'));
+			});
+			big_pic_brow.click(function(){
+				big_pic_brow_bg.slideUp('fast');
+				big_pic_brow.slideUp('fast');
+			});
+			/*js控制屏幕移动到某个位置*/
+			$('#nav>li>a').click(function(){
+				$("html,body").animate({
+					scrollTop:$($(this).attr('data-target')).offset().top
+				},500);
+				
+			});
+			/*返回顶部*/
+			$("#goTop").click(function (){
+				$('body,html').animate({scrollTop:0},800);
+				return false;
+			});
+			/*显示和隐藏 返回顶部 的按钮*/
+			$(window).scroll(function() {
+				if( $(this).scrollTop() != 0){
+					$('#goTop').fadeIn();
+				} else {
+					$('#goTop').fadeOut();
+				}
+			});
+		});
 	</script>
     </body>
 </html>

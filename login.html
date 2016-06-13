@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="style/login.css">
+		<!--bootstrap框架-->
+		<link href="style/landing-page.css" rel="stylesheet" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/login.js"></script>
+    </head>
+    <body>
+		<!--正文-->
+		<div class="container">
+			<div class="row cont">
+				<div class="col-md-4 col-lg-4 col-sm-4"></div>
+				<div class="col-md-4 col-lg-4 col-sm-4">
+					<h2>Login to Spring</h2>
+					<form method="POST" action="#" >
+						<div class="user">
+							<input id="name" maxlength="16" name="username" placeholder="Username" type="text">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+					   </div>
+					   <div class="user">
+							<input name="password" maxlength="16" placeholder="Password" type="password">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+					   </div>
+						<div class="actions">
+							<button onclick="return loginCheck()" class="btn btn-primary" type="submit">Log in</button>
+							<a class="text-right" href="#">Forgot Password?</a>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-lg-4 col-sm-4"></div>
+			</div>
+		</div>
+    </body>
+</html>
