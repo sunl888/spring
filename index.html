@@ -61,7 +61,7 @@
 								<h4>我在四月的龙眠河畔等你</h4>
 								<h4>杨柳岸，四月的细雨写满眷恋，龙眠大地处处都是诗情画意。</h4>
 							</div>
-							<button type="button" class=" btn-custom wow bounceInUp animated">Next</button>
+							<a id="sec1" class=" btn-custom wow bounceInUp animated" data-target="#section1">Next</a>
 	                    </div>
 	                </div>
 	            </div>
@@ -355,7 +355,7 @@
 						<div class="cp_pic">
 							<img class="big" src="images/pic/21.jpg" />
 							<a href="javascript:;">
-								<p>点击查看大图</p>
+								<p>这妹子好漂亮</p>
 							</a>
 						</div>
 					</li>
@@ -461,7 +461,7 @@
 			<footer class="foot">
 				<ul class="list-inline">
 					<li>
-						<a target="_blank" href="https://www.github.com/3tnet">GitHub</a>
+						<a target="_blank" href="https://git.oschina.net/hloves/Spring.git">GitHub</a>
 					</li>
 					<li class="footer-menu-divider">&sdot;</li>
 					<li>
@@ -498,6 +498,13 @@
 			});
 			/*js控制屏幕移动到某个位置*/
 			$('#nav>li>a').click(function(){
+				$("html,body").animate({
+					scrollTop:$($(this).attr('data-target')).offset().top
+				},500);
+				
+			});
+			/*首页next*/
+			$('#sec1').click(function(){
 				$("html,body").animate({
 					scrollTop:$($(this).attr('data-target')).offset().top
 				},500);
