@@ -12,9 +12,22 @@
 				}
 				$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
 				if (progress >= str.length) {
+					/*打字机结束后定时跳转网页*/
+					function jump(count){    
+						window.setTimeout(function(){    
+							count--;    
+							if(count > 0) {
+								jump(count);    
+							} else {    
+								location.href="home.html";    
+							}    
+						}, 1300);    
+					}  
+					jump(4);
+					$("#base").css('display','block');					
 					clearInterval(timer);
 				}
-			}, 75);
+			}, 100);
 		});
 		return this;
 	};
